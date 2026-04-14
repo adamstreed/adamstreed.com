@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Title | Adam Streed</title>
+    <style>
+        body {
+            line-height: 1.8;
+            font-family: "Georgia", serif; /* Classic serif for long-form reading */
+            color: #222;
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        /* Context Box */
+        .sample-metadata {
+            font-family: -apple-system, sans-serif;
+            background: #f4f7f9;
+            padding: 20px;
+            border-left: 4px solid #0066cc;
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+        }
+
+        .sample-metadata h4 { margin: 0 0 10px 0; color: #0066cc; }
+
+        /* Typography */
+        h1 { font-family: -apple-system, sans-serif; font-size: 2.5rem; line-height: 1.2; margin-bottom: 10px; }
+        .subtitle { font-family: -apple-system, sans-serif; color: #666; font-size: 1.2rem; margin-bottom: 30px; }
+        
+        p { margin-bottom: 1.5rem; }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            font-family: -apple-system, sans-serif;
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: 500;
+        }
+
+        .back-link:hover { text-decoration: underline; }
+
+        hr { border: 0; border-top: 1px solid #eee; margin: 40px 0; }
+
+        footer {
+            font-family: -apple-system, sans-serif;
+            font-size: 0.85rem;
+            color: #888;
+            text-align: center;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+
+    <header>
+        <h1>Kitchen Science</h1>
+        <p class="subtitle">(A question of pressure)</p>
+    </header>
+
+    <section class="sample-metadata">
+        <h4>Context</h4>
+        <p><strong>Goal:</strong> Arrive at a common understanding with a backyard maple syrup producer</p>
+        <p><strong>Role:</strong> Sole Writer</p>
+        <p><strong>Target Audience:</strong> All home cooks, but especially those at high elevations</p>
+    </section>
+
+    <article>
+        <h3>The Challenge</h3>
+        <p>
+            <em> Please fix your website's online Boiling Temp Calculator.  The boiling point of water depends only on the atmospheric pressure at the location you are boiling. Period.
+However, your Boiling Point Calculator, when used per the instructions, requires inputting the atmospheric
+pressure as well as the altitude. <br><br>
+Yes, atmospheric pressure, therefore the boiling point, changes with altitude. If you need to know the boiling
+temp at a known altitude, for instance you plan to climb to a camping spot and boil a meal, you can get an
+approximate boiling point using any of a number of charts that show the boiling temperature at that altitude.
+However, inputting the current atmospheric pressure at your location AND altitude into your online calculator
+results in an incorrect lower boiling point. The higher your altitude - the more incorrect the answer. <br><br>
+An example of a calculator that works correctly: <a href="https://www.calctool.org/thermodynamics/boiling-point">Boiling Point Calculator (calctool.org)</a>
+Thanks, Steve</em>
+        </p>
+
+        <h3>My Reply</h3>
+        <p>
+           Hi Steve -
+I think I understand your concern, and I hope I can provide a satisfactory
+explanation. <br><br>
+You are correct that the boiling point of water depends only on atmospheric pressure, and that altitude is simply
+a proxy for pressure. However, barometric pressure is generally reported by weather stations as a "corrected"
+value, meaning that it has been standardized to a like-sea-level value for a given location. For example, at this
+moment, Weather Underground is reporting barometric pressure here in American Fork as 30.02 inches, and in
+San Francisco as 30.16 inches Hg: <br><br>
+<a href="https://www.wunderground.com/forecast/us/ut/american-fork">https://www.wunderground.com/forecast/us/ut/american-fork</a> <br>
+<a href="https://www.wunderground.com/weather/us/ca/san-francisco/37.78,-122.42">https://www.wunderground.com/weather/us/ca/san-francisco/37.78,-122.42</a>  <br><br>
+The reported pressure at sea level is indeed higher than here, but not nearly higher enough to account for 4600
+feet of elevation difference. And indeed, if I plug 30.02 inches Hg into the boiling point calculator you linked, the
+resulting boiling point is 212.17°F—which I can confirm empirically is not correct, as water here boils closer to
+204°F. <br><br>
+This is why the boiling point calculator on out website requires values for both elevation and
+(corrected) barometric pressure; it is in effect "uncorrecting" the value for pressure by using the elevation
+information. It turns out there is at least one dedicated calculator on the web that does the uncorrection
+operation: <br><br>
+<a href="http://www.csgnetwork.com/barcorrecthcalc.html">http://www.csgnetwork.com/barcorrecthcalc.html</a> <br><br>
+And when I plug in 30.02 inches at 4633 feet of elevation, the uncorrected value is 25.44 inches Hg. And when I
+plug <em>that</em> into the boiling point calculator you linked, I get a resulting value of 203.8°F, which is exactly right.
+I hope you find this explanation congenial—but please let me know if you don't. I'll be glad to correct any
+mistakes I've made. <br><br>
+          Best regards, <br>
+          Adam Streed
+        </p>
+    </article>
+
+    <hr>
+
+    <footer>
+        &copy; 2026 Adam Streed | <a href="mailto:adam.streed@gmail.com" style="color: #888;">Contact</a>
+    </footer>
+
+</body>
+</html>
